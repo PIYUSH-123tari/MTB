@@ -1,4 +1,5 @@
 const API_URL = "https://gist.githubusercontent.com/PIYUSH-123tari/c27da6ef5606e331e8316bb3498d8d65/raw/b0bb91dc28a0f018e5d6c5921e942594de4f3bcd/db.json";
+
 const dateBar = document.getElementById("dateBar");
 const container = document.getElementById("showtimesContainer");
 const bookedSeatsBtn = document.getElementById('bookedSeatsBtn');
@@ -6,7 +7,7 @@ const bookedSeatsBtn = document.getElementById('bookedSeatsBtn');
 const activeDates = ["June 17 Tue", "June 18 Wed", "June 19 Thur"];
 const allDates = ["June 17 Tue", "June 18 Wed", "June 19 Thur", "June 20 Fri", "June 21 Sat", "June 22 Sun"];
 
-// --- Booked Seats Button ---
+// ------------------- BOOKED SEATS BUTTON -------------------
 bookedSeatsBtn.addEventListener('click', () => {
   const userId = localStorage.getItem('LoggedInUser');
   if (!userId) {
@@ -17,7 +18,7 @@ bookedSeatsBtn.addEventListener('click', () => {
   window.location.href = './bookedseatDisplay/booked.html';
 });
 
-// --- Load API ---
+// ------------------- LOAD API DATA -------------------
 async function loadShowtimes() {
   try {
     const res = await fetch(API_URL);
@@ -26,22 +27,21 @@ async function loadShowtimes() {
     console.log("Fetched Data:", data);
 
     renderDateBar(data);
-    showMovies(data, activeDates[0]); // default first date
+    showMovies(data, activeDates[0]);  // default first date
   } catch (err) {
     container.innerHTML = <p style="color:red;">❌ Error loading data: ${err.message}</p>;
   }
 }
 
-// --- Date Bar Rendering ---
+// ------------------- DATE BAR -------------------
 function renderDateBar(data) {
   dateBar.innerHTML = "";
 
   allDates.forEach(d => {
     const btn = document.createElement("button");
-    btn.textContent = d;
     btn.className = "date-btn";
 
-    const parts = btn.textContent.split(" ");
+    const parts = d.split(" ");
     btn.innerHTML = parts.join("<br>");
 
     if (!activeDates.includes(d)) {
@@ -61,16 +61,16 @@ function renderDateBar(data) {
   });
 }
 
-// --- FIXED showMovies() ---
+// ------------------- SHOW MOVIES (UPDATED FOR NEW JSON) -------------------
 function showMovies(data, date) {
   container.innerHTML = "";
 
-  if (!data[date]) {
+  if (!data.showtimes[date]) {
     container.innerHTML = "<p>No shows available.</p>";
     return;
   }
 
-  const shows = data[date];  // FIXED (was data[date][0])
+  const shows = data.showtimes[date][0]; // IMPORTANT FIX ✔
 
   for (const movie in shows) {
     const card = document.createElement("div");
@@ -111,7 +111,7 @@ function showMovies(data, date) {
   }
 }
 
-// --- Time Click Handler ---
+// ------------------- TIME BUTTON HANDLER -------------------
 function handleTimeClick(button) {
   const isSelected = button.classList.contains('selected');
 
@@ -132,7 +132,7 @@ function handleTimeClick(button) {
     db.disabled = true;
   });
 
-  const activeDateBtn = Array.from(document.querySelectorAll('.date-btn'))
+  const activeDateBtn = [...document.querySelectorAll('.date-btn')]
     .find(x => x.classList.contains('active'));
 
   if (activeDateBtn) {
@@ -141,7 +141,6 @@ function handleTimeClick(button) {
   }
 
   let card = button.closest('.showtime-card');
-  if (!card) return;
 
   document.querySelectorAll('.choose-seat').forEach(el => el.remove());
 
@@ -161,7 +160,7 @@ function handleTimeClick(button) {
   card.appendChild(choose);
 }
 
-// --- Clear State ---
+// ------------------- CLEAR STATE -------------------
 function clearSelectionState() {
   document.querySelectorAll('.time-btn').forEach(b => {
     b.classList.remove('selected');
@@ -177,5 +176,5 @@ function clearSelectionState() {
   document.querySelectorAll('.choose-seat').forEach(el => el.remove());
 }
 
-// --- Init ---
+// ------------------- INITIAL LOAD -------------------
 loadShowtimes();
