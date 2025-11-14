@@ -20,7 +20,7 @@ document.getElementById('dateDisplay').textContent = date;
 let screenData, selectedSeats = [], currentPrice = 0;
 
 // Load screen data from screen.json
-fetch('screen.json')
+fetch('https://gist.githubusercontent.com/PIYUSH-123tari/c27da6ef5606e331e8316bb3498d8d65/raw/b0bb91dc28a0f018e5d6c5921e942594de4f3bcd/screen.json')
   .then(res => res.json())
   .then(json => {
     // Use only the first screen (Screen 1)
