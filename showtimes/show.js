@@ -24,6 +24,7 @@ async function loadShowtimes() {
     const res = await fetch(API_URL);
     const data = await res.json();
     renderDateBar(data);
+    console.log(data);
     showMovies(data, activeDates[0]); // default first active date
   } catch (err) {
     container.innerHTML = `<p style="color:red;">❌ Error loading data: ${err.message}</p>`;
