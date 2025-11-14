@@ -1,0 +1,64 @@
+{
+  "showtimes": {
+    "June 17 Tue": [
+      {
+        "Avengers Endgame": {
+          "INOX Panjim": ["8:00 AM", "2:00 PM"],
+          "Samrat Panjim": ["10:00 AM", "6:00 PM"]
+        },
+        "Sikandar": {
+          "INOX Panjim": ["9:00 AM", "12:00 PM"],
+          "Samrat Panjim": ["4:00 PM", "8:00 PM"]
+        },
+        "Spiderman No Way Home": {
+          "INOX Panjim": ["10:00 AM", "3:00 PM"],
+          "Samrat Panjim": ["1:00 PM", "7:30 PM"]
+        },
+        "Marco": {
+          "INOX Panjim": ["11:00 AM", "6:00 PM"],
+          "Samrat Panjim": ["9:00 AM", "5:00 PM"]
+        }
+      }
+    ],
+    "June 18 Wed": [
+      {
+        "Avengers Endgame": {
+          "INOX Panjim": ["9:30 AM", "1:30 PM"],
+          "Samrat Panjim": ["4:00 PM", "9:00 PM"]
+        },
+        "Sikandar": {
+          "INOX Panjim": ["10:00 AM", "5:00 PM"],
+          "Samrat Panjim": ["2:30 PM", "8:30 PM"]
+        },
+        "Spiderman No Way Home": {
+          "INOX Panjim": ["12:00 PM", "6:30 PM"],
+          "Samrat Panjim": ["11:00 AM", "7:00 PM"]
+        },
+        "Marco": {
+          "INOX Panjim": ["11:30 AM", "8:00 PM"],
+          "Samrat Panjim": ["3:30 PM", "9:15 PM"]
+        }
+      }
+    ],
+    "June 19 Thur": [
+      {
+        "Avengers Endgame": {
+          "INOX Panjim": ["9:30 AM", "1:30 PM"],
+          "Samrat Panjim": ["8:00 AM", "9:00 PM"]
+        },
+        "Sikandar": {
+          "INOX Panjim": ["10:00 AM", "5:00 PM"],
+          "Samrat Panjim": ["2:30 PM", "8:30 PM"]
+        },
+        "Spiderman No Way Home": {
+          "INOX Panjim": ["12:00 PM", "6:30 PM"],
+          "Samrat Panjim": ["11:00 AM", "7:00 PM"]
+        },
+        "Marco": {
+          "INOX Panjim": ["11:30 AM", "8:00 PM"],
+          "Samrat Panjim": ["3:30 PM", "9:15 PM"]
+        }
+      }
+    ]
+  }
+}

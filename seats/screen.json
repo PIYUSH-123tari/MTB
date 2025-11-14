@@ -1,0 +1,74 @@
+{
+  "sections": [
+    {
+      "name": "Classic",
+      "price": 150,
+      "rows": 5,
+      "columns": 6,
+      "seats": [
+        { "seatNo": "A1", "status": "available" }, { "seatNo": "A2", "status": "available" },
+        { "seatNo": "A3", "status": "available" }, { "seatNo": "A4", "status": "available" },
+        { "seatNo": "A5", "status": "available" }, { "seatNo": "A6", "status": "available" },
+        { "seatNo": "B1", "status": "available" }, { "seatNo": "B2", "status": "available" },
+        { "seatNo": "B3", "status": "available" }, { "seatNo": "B4", "status": "available" },
+        { "seatNo": "B5", "status": "available" }, { "seatNo": "B6", "status": "available" },
+        { "seatNo": "C1", "status": "available" }, { "seatNo": "C2", "status": "available" },
+        { "seatNo": "C3", "status": "available" }, { "seatNo": "C4", "status": "available" },
+        { "seatNo": "C5", "status": "available" }, { "seatNo": "C6", "status": "available" },
+        { "seatNo": "D1", "status": "available" }, { "seatNo": "D2", "status": "available" },
+        { "seatNo": "D3", "status": "available" }, { "seatNo": "D4", "status": "available" },
+        { "seatNo": "D5", "status": "available" }, { "seatNo": "D6", "status": "available" },
+        { "seatNo": "E1", "status": "available" }, { "seatNo": "E2", "status": "available" },
+        { "seatNo": "E3", "status": "available" }, { "seatNo": "E4", "status": "available" },
+        { "seatNo": "E5", "status": "available" }, { "seatNo": "E6", "status": "available" }
+      ]
+    },
+    {
+      "name": "Prime",
+      "price": 250,
+      "rows": 4,
+      "columns": 8,
+      "seats": [
+        { "seatNo": "F1", "status": "available" }, { "seatNo": "F2", "status": "available" },
+        { "seatNo": "F3", "status": "available" }, { "seatNo": "F4", "status": "available" },
+        { "seatNo": "F5", "status": "available" }, { "seatNo": "F6", "status": "available" },
+        { "seatNo": "F7", "status": "available" }, { "seatNo": "F8", "status": "available" },
+        { "seatNo": "G1", "status": "available" }, { "seatNo": "G2", "status": "available" },
+        { "seatNo": "G3", "status": "available" }, { "seatNo": "G4", "status": "available" },
+        { "seatNo": "G5", "status": "available" }, { "seatNo": "G6", "status": "available" },
+        { "seatNo": "G7", "status": "available" }, { "seatNo": "G8", "status": "available" },
+        { "seatNo": "H1", "status": "available" }, { "seatNo": "H2", "status": "available" },
+        { "seatNo": "H3", "status": "available" }, { "seatNo": "H4", "status": "available" },
+        { "seatNo": "H5", "status": "available" }, { "seatNo": "H6", "status": "available" },
+        { "seatNo": "H7", "status": "available" }, { "seatNo": "H8", "status": "available" },
+        { "seatNo": "I1", "status": "available" }, { "seatNo": "I2", "status": "available" },
+        { "seatNo": "I3", "status": "available" }, { "seatNo": "I4", "status": "available" },
+        { "seatNo": "I5", "status": "available" }, { "seatNo": "I6", "status": "available" },
+        { "seatNo": "I7", "status": "available" }, { "seatNo": "I8", "status": "available" }
+      ]
+    },
+    {
+      "name": "Royale",
+      "price": 350,
+      "rows": 3,
+      "columns": 10,
+      "seats": [
+        { "seatNo": "J1", "status": "available" }, { "seatNo": "J2", "status": "available" },
+        { "seatNo": "J3", "status": "available" }, { "seatNo": "J4", "status": "available" },
+        { "seatNo": "J5", "status": "available" }, { "seatNo": "J6", "status": "available" },
+        { "seatNo": "J7", "status": "available" }, { "seatNo": "J8", "status": "available" },
+        { "seatNo": "J9", "status": "available" }, { "seatNo": "J10", "status": "available" },
+        { "seatNo": "K1", "status": "available" }, { "seatNo": "K2", "status": "available" },
+        { "seatNo": "K3", "status": "available" }, { "seatNo": "K4", "status": "available" },
+        { "seatNo": "K5", "status": "available" }, { "seatNo": "K6", "status": "available" },
+        { "seatNo": "K7", "status": "available" }, { "seatNo": "K8", "status": "available" },
+        { "seatNo": "K9", "status": "available" }, { "seatNo": "K10", "status": "available" },
+        { "seatNo": "L1", "status": "available" }, { "seatNo": "L2", "status": "available" },
+        { "seatNo": "L3", "status": "available" }, { "seatNo": "L4", "status": "available" },
+        { "seatNo": "L5", "status": "available" }, { "seatNo": "L6", "status": "available" },
+        { "seatNo": "L7", "status": "available" }, { "seatNo": "L8", "status": "available" },
+        { "seatNo": "L9", "status": "available" }, { "seatNo": "L10", "status": "available" }
+      ]
+    }
+  ]
+}
