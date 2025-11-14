@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/showtimes";
+const API_URL = "https://piyush-123tari.github.io/MTB-data/db.json";
 const dateBar = document.getElementById("dateBar");
 const container = document.getElementById("showtimesContainer");
 const bookedSeatsBtn = document.getElementById('bookedSeatsBtn');
