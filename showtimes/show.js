@@ -1,4 +1,4 @@
-const API_URL = "https://piyush-123tari.github.io/MTB-data/db.json";
+const API_URL = "https://gist.githubusercontent.com/PIYUSH-123tari/c27da6ef5606e331e8316bb3498d8d65/raw/b0bb91dc28a0f018e5d6c5921e942594de4f3bcd/db.json";
 const dateBar = document.getElementById("dateBar");
 const container = document.getElementById("showtimesContainer");
 const bookedSeatsBtn = document.getElementById('bookedSeatsBtn');
