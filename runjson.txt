@@ -1,2 +1,10 @@
-to run .json file such as screen.json and db.json go to file directory and run in terminal 
-npx json-server --watch filename --port 3000(chose separate for screen.json and db.json).
+if the api key or url doesnot works then run the screen.json and db.json file on the terminal
+change code in show.js in api url variable
+change it to "http://localhost:3000/showtimes"
+run commands
+npx json-server --watch db.json --port 3000;
+
+also to run screen.json go to
+seats.js inside fetch change url to 'screen.json'
+and run in terminal
+npx json-server --watch screen.json --port 3001;
