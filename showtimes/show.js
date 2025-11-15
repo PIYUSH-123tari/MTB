@@ -24,12 +24,14 @@ async function loadShowtimes() {
     const res = await fetch(API_URL);
     const data = await res.json();
 
-    console.log("Fetched Data:", data);
+    // Extract the actual showtimes object from the outer wrapper
+    const showtimesData = data.showtimes; 
 
-    renderDateBar(data);
-    showMovies(data, activeDates[0]);  // default first date
+    renderDateBar(showtimesData); 
+    showMovies(showtimesData, activeDates[0]); 
+
   } catch (err) {
-    container.innerHTML = <p style="color:red;">❌ Error loading data: ${err.message}</p>;
+    container.innerHTML = `<p style="color:red;">❌ Error loading data: ${err.message}</p>`;
   }
 }
 
