@@ -23,6 +23,7 @@ async function loadShowtimes() {
   try {
     const res = await fetch(API_URL);
     const data = await res.json();
+      console.log(data);
 
     // Extract the actual showtimes object from the outer wrapper
     const showtimesData = data.showtimes; 
